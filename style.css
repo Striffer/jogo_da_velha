@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #6f6f6f;
+    --text-color: #efefef
+}
+
+body {
+    overflow: hidden;
+    background: var(--bg-color);
+}
+
+/* ----------Header---------- */
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 10vh;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--text-color);
+}
+
+header hr {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+/* ----------Main---------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100vw;
+}
+
+.player-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -100px;
+    width: 100vw;
+    height: 15vh;
+    color: var(--text-color);
+}
+
+.player-turn {
+    margin-top: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.btn-start {
+    margin-left: 50px;
+}
+
+.btn-start,
+.btn-restart {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 160px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: var(--text-color);
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+}
+
+.game-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 650px;
+    height: 650px;
+    margin-top: 50px;
+}
+
+.a1, .b1, .c1, .a2, .b2, .c2, .a3, .b3, .c3 {
+    position: relative;
+    width: 33.33%;
+    height: 33.33%;
+}
+
+.a1, .b1, .a2, .b2 {
+    border-bottom: 5px solid var(--text-color);
+    border-right: 5px solid var(--text-color);
+}
+
+.c1, .c2 {
+    border-bottom: 5px solid var(--text-color);
+}
+
+.a3, .b3 {
+    border-right: 5px solid var(--text-color);
+}
+
+.ticTacToeBtn {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 200px;
+    cursor: pointer;
+}
+
